@@ -1,0 +1,16 @@
+snippet [
+	[${1:label}](${2:location})
+
+snippet ![
+	![${1:label}](${2:location})
+
+snippet r
+	```{r ${1:label}, ${2:options}}
+	${0}
+	```
+
+snippet twe
+	```{r, echo = FALSE}
+	blogdown::shortcode("tweet", "${1:tweetid}")
+	```
+  
