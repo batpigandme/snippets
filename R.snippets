@@ -99,16 +99,16 @@ snippet shinyapp
 	shinyApp(ui, server)
 
 snippet dtgh
-	remotes::install_github("${1}")
+	remotes::install_github("${1:repo}")
 
 snippet dtt
-	remotes::install_github("tidyverse/${1}")
+	remotes::install_github("tidyverse/${1:repo}")
 
 snippet dtr
-	remotes::install_github("r-lib/${1}")
+	remotes::install_github("r-lib/${1:repo}")
 
 snippet hh
-	here::here("${1}")
+	here::here("${1:folder}", "${2:file}")
 
 snippet ltv
 	suppressPackageStartupMessages(library(tidyverse))
@@ -124,3 +124,5 @@ snippet lgg
 
 snippet ldp
 	library(dplyr, warn.conflicts = FALSE)
+
+
