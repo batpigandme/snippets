@@ -87,15 +87,15 @@ snippet ts
 
 snippet shinyapp
 	library(shiny)
-	
+
 	ui <- fluidPage(
 	  ${0}
 	)
-	
+
 	server <- function(input, output, session) {
-	  
+
 	}
-	
+
 	shinyApp(ui, server)
 
 snippet dtgh
@@ -103,15 +103,24 @@ snippet dtgh
 
 snippet dtt
 	remotes::install_github("tidyverse/${1}")
-	
+
 snippet dtr
 	remotes::install_github("r-lib/${1}")
 
 snippet hh
 	here::here("${1}")
-	
+
 snippet ltv
 	suppressPackageStartupMessages(library(tidyverse))
 
+snippet llb
+	library(lubridate)
+
 snippet aa
 	${1:dataset} <- ${1:dataset} %>% ${0}
+
+snippet lgg
+	library(ggplot2, warn.conflicts = FALSE)
+
+snippet ldp
+	library(dplyr, warn.conflicts = FALSE)
