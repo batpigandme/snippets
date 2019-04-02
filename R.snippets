@@ -108,7 +108,7 @@ snippet dtr
 	remotes::install_github("r-lib/${1:repo}")
 
 snippet hh
-	here::here("${1:folder}", "${2:file}")
+	here::here("${1:folder}", "${2:file}")${0}
 
 snippet ltv
 	suppressPackageStartupMessages(library(tidyverse))
@@ -125,4 +125,5 @@ snippet lgg
 snippet ldp
 	library(dplyr, warn.conflicts = FALSE)
 
-
+snippet pki
+	pak::pkg_install("${1}")
