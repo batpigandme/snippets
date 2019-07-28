@@ -134,3 +134,17 @@ snippet pki
 snippet rupd
 	remotes::update_packages()
 
+snippet ymla
+	library(ymlthis)
+	yml() %>%
+		yml_title("${1:title}") %>%
+		yml_output(
+			html_document(
+				keep_md = TRUE
+				)
+			) %>%
+		use_rmarkdown(path = here::here("${2:folder}", "${3:filename}.Rmd"))
+		${0}
+
+
+
