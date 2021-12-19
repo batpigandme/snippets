@@ -18,9 +18,9 @@ snippet rcpp
 	```{r, engine='Rcpp'}
 	#include <Rcpp.h>
 	using namespace Rcpp;
-	
+
 	${0}
-	
+
 	```
 
 snippet rmdi
@@ -28,3 +28,14 @@ snippet rmdi
 	knitr::opts_chunk$set(echo = TRUE, fig.retina = 2, dpi = 300)
 	```
 	${0}
+
+snippet div
+	::: {#${1:id} .${2:class}}
+	${3:content}
+	:::
+
+snippet note
+	::: {.reader-note}
+	${1:content}
+	:::
+
